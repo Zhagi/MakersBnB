@@ -1,36 +1,52 @@
-# MakersBnB Python Project Seed
+# MakersBnB
 
-This repo contains the seed codebase for the MakersBnB project in Python (using 
-Flask and Pytest).
+## Introduction
 
-Someone in your team should fork this seed repo to their Github account. 
-Everyone in the team should then clone this fork to their local machine to work on it.
+MakersBnB is an experimental clone of AirBnB, developed as a collaborative effort by our team using agile methodologies. Over the course of four days, we built a web application that allows users to register, log in, find accommodations, and book or offer lodging.
 
-## Setup
+## Tech Stack
 
-```shell
-# Install dependencies and set up the virtual environment
-; pipenv install
+- Flask, HTML5, CSS, Python, PostgreSQL 
 
-# Activate the virtual environment
-; pipenv shell
+## Running the Project
 
-# Install the virtual browser we will use for testing
-; playwright install
-# If you have problems with the above, contact your coach
+1. Clone the repository to download the source code to your local machine:
 
-# Create a test and development database
-; createdb YOUR_PROJECT_NAME
-; createdb YOUR_PROJECT_NAME_TEST
+   git clone https://github.com/Zhagi/MakersBnB.git
 
-# Open lib/database_connection.py and change the database names
-; open lib/database_connection.py
+2. Change into the project directory:
+   
+   cd MakersBnB
 
-# Run the tests (with extra logging)
-; pytest -sv
+3. Install the project dependencies using Pipenv, which ensures that you have a dedicated virtual environment:
+   
+   pipenv install
+   
+4. Activate the Pipenv virtual environment:
+   
+   pipenv shell
 
-# Run the app
-; python app.py
+5. Install PostgreSQL, an open-source relational database system:
 
-# Now visit http://localhost:5000/index in your browser
-```
+   brew install postgresql
+
+6. Start the PostgreSQL service using Homebrew services (macOS):
+
+   brew services start postgresql
+
+7. Create the main application database:
+
+   createdb makers_bnb
+
+8. Seed the development database with initial data:
+
+   python seed_dev_database.py
+
+9. Start the Flask application:
+
+   python app.py
+
+10. Open a web browser and navigate to http://localhost:5000/ to view the running application.
+
+
+
