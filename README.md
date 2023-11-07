@@ -15,43 +15,35 @@ MakersBnB is an AirBnB clone created as part of a team project. Utilising agile 
 
 ## Running the Project
 
-1. Clone the repository to download the source code to your local machine:
+```bash
+# Clone the repository to download the source code to your local machine
+git clone https://github.com/Zhagi/MakersBnB.git
 
-   git clone https://github.com/Zhagi/MakersBnB.git
+# Change into the project directory
+cd MakersBnB
 
-2. Change into the project directory:
-   
-   cd MakersBnB
+# Install the project dependencies using Pipenv
+pipenv install
 
-3. Install the project dependencies using Pipenv, which ensures that you have a dedicated virtual environment:
-   
-   pipenv install
-   
-4. Activate the Pipenv virtual environment:
-   
-   pipenv shell
+# Activate the Pipenv virtual environment
+pipenv shell
 
-5. Install PostgreSQL, an open-source relational database system:
+# Install PostgreSQL, an open-source relational database system
+brew install postgresql
 
-   brew install postgresql
+# Start the PostgreSQL service using Homebrew services (macOS)
+brew services start postgresql
 
-6. Start the PostgreSQL service using Homebrew services (macOS):
+# Create the main application database
+createdb makers_bnb
 
-   brew services start postgresql
+# Seed the development database with initial data
+python seed_dev_database.py
 
-7. Create the main application database:
+# Start the Flask application
+python app.py
 
-   createdb makers_bnb
-
-8. Seed the development database with initial data:
-
-   python seed_dev_database.py
-
-9. Start the Flask application:
-
-   python app.py
-
-10. Open a web browser and navigate to http://localhost:5000/ to view the running application.
+# Open a web browser and navigate to http://localhost:5000/ to view the running application.
 
 
 
@@ -59,31 +51,26 @@ MakersBnB is an AirBnB clone created as part of a team project. Utilising agile 
 
 To ensure the application works as expected, follow these steps to run the tests:
 
-1. Install the project dependencies if you haven't already:
-   
-   pipenv install
+# Install the project dependencies
+pipenv install
 
-2. Install Playwright, which is used for end-to-end testing:
+# Install the playwright library to run the tests
+playwright install
 
-   playwright install
+# Activate the Pipenv virtual environment
+pipenv shell
 
-3. Activate the Pipenv virtual environment:
+# Create the database for test mode
+createdb makers_bnb_test
 
-   pipenv shell
+# Add the tables locally to the test database
+psql -d makers_bnb_test -f seeds/makersbnb.sql
 
-4. Create a separate database for testing purposes:
+# Run the tests
+pipenv run pytest
 
-   createdb makers_bnb_test
+# Check the test results in your terminal
 
-5. Seed the test database with initial data:
-
-   psql -d makers_bnb_test -f seeds/makersbnb.sql
-
-6. Run the tests using pytest:
-
-   pipenv run pytest
-
-7. You can check the test results in your terminal to verify everything is working correctly.
 
 
 
