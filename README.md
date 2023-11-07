@@ -67,7 +67,7 @@ python app.py
 
 ## Running the Tests
 
-## To ensure the application works as expected, follow these steps to run the tests:
+### To ensure the application works as expected, follow these steps to run the tests:
 
 ```bash
 # Install the project dependencies
@@ -99,7 +99,7 @@ psql -d makers_bnb_test -f seeds/makersbnb.sql
 pipenv run pytest
 ```
 
-## Check the test results in your terminal
+### Check the test results in your terminal
 
 
 
