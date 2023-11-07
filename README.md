@@ -15,8 +15,9 @@ MakersBnB is an AirBnB clone created as part of a team project. Utilising agile 
 
 ## Running the Project
 
-```bash
+
 # Clone the repository to download the source code to your local machine
+```bash
 git clone https://github.com/Zhagi/MakersBnB.git
 ```
 
