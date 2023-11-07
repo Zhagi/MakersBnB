@@ -1,11 +1,8 @@
 # MakersBnB
 
----
-
 ## Introduction
 MakersBnB is an AirBnB clone created as part of a team project. Utilising agile work practices, our group designed and integrated a SQL database with Python to develop a fully functional web application within 4 days. Users can register, log in, find accommodation, book stays, or list their own property.
 
----
 
 ## Tech Stack
 
@@ -15,7 +12,6 @@ MakersBnB is an AirBnB clone created as part of a team project. Utilising agile 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
----
 
 ## Running the Project
 
@@ -57,7 +53,7 @@ MakersBnB is an AirBnB clone created as part of a team project. Utilising agile 
 
 10. Open a web browser and navigate to http://localhost:5000/ to view the running application.
 
----
+
 
 ## Running the Tests
 
