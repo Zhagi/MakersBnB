@@ -69,23 +69,35 @@ python app.py
 
 To ensure the application works as expected, follow these steps to run the tests:
 
+```bash
 # Install the project dependencies
 pipenv install
+```
 
+```bash
 # Install the playwright library to run the tests
 playwright install
+```
 
+```bash
 # Activate the Pipenv virtual environment
 pipenv shell
+```
 
+```bash
 # Create the database for test mode
 createdb makers_bnb_test
+```
 
+```bash
 # Add the tables locally to the test database
 psql -d makers_bnb_test -f seeds/makersbnb.sql
+```
 
+```bash
 # Run the tests
 pipenv run pytest
+```
 
 # Check the test results in your terminal
 
