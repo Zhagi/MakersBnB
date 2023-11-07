@@ -15,41 +15,54 @@ MakersBnB is an AirBnB clone created as part of a team project. Utilising agile 
 
 ## Running the Project
 
-
-# Clone the repository to download the source code to your local machine
 ```bash
+# Clone the repository to download the source code to your local machine
 git clone https://github.com/Zhagi/MakersBnB.git
 ```
 
 ```bash
 # Change into the project directory
 cd MakersBnB
-'''
+```
 
-
+```bash
 # Install the project dependencies using Pipenv
 pipenv install
+```
 
+```bash
 # Activate the Pipenv virtual environment
 pipenv shell
+```
 
+```bash
 # Install PostgreSQL, an open-source relational database system
 brew install postgresql
+```
 
+```bash
 # Start the PostgreSQL service using Homebrew services (macOS)
 brew services start postgresql
+```
 
+```bash
 # Create the main application database
 createdb makers_bnb
+```
 
+```bash
 # Seed the development database with initial data
 python seed_dev_database.py
+```
 
+```bash
 # Start the Flask application
 python app.py
+```
 
+```bash
 # Open a web browser and navigate to http://localhost:5000/ to view the running application.
-
+```
 
 
 ## Running the Tests
